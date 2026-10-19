@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 660" role="img" aria-labelledby="title desc">
+  <title id="title">Heritage to handcraft illustration</title>
+  <desc id="desc">A pottery vessel sits before a playful Art Deco inspired building facade with lemons and decorative clay forms.</desc>
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2" fill="#233044" opacity=".25"/></pattern>
+  </defs>
+  <path d="M160 99 575 52l69 498-534 29z" fill="#efb5c4" stroke="#233044" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M213 92 554 59l35 427-404 22z" fill="#f6f0e6" stroke="#233044" stroke-width="6"/>
+  <path d="m213 92 172-16 19 411-219 21z" fill="#b86f52" opacity=".18"/>
+  <path d="M193 152 567 116M200 228l373-35M206 304l372-34M212 380l372-34" fill="none" stroke="#233044" stroke-width="5"/>
+  <g fill="#87b8cc" stroke="#233044" stroke-width="5">
+    <path d="M231 125h60v77h-60z"/><path d="M327 117h60v77h-60z"/><path d="M423 108h60v77h-60z"/><path d="M508 101h37v77h-37z"/>
+    <path d="M238 238h60v49h-60z"/><path d="M334 229h60v49h-60z"/><path d="M430 220h60v49h-60z"/><path d="M515 212h37v49h-37z"/>
+  </g>
+  <g fill="#f4d35e" stroke="#233044" stroke-width="5">
+    <path d="M246 315h53v54h-53z"/><path d="M342 306h53v54h-53z"/><path d="M438 297h53v54h-53z"/><path d="M523 289h33v54h-33z"/>
+  </g>
+  <path d="M298 91 386 15l104 59" fill="#f4d35e" stroke="#233044" stroke-width="6" stroke-linejoin="round"/>
+  <path d="m360 79 27-40 35 34" fill="#233044"/>
+  <path d="M152 439c77-62 335-77 450 0l-12 119-430 22z" fill="#8fb996" stroke="#233044" stroke-width="6"/>
+  <path d="M195 477c44 48 323 40 366-13" fill="none" stroke="#233044" stroke-width="6" stroke-linecap="round"/>
+  <path d="M274 307h173l-17 75c43 26 72 83 57 142-16 62-66 93-126 93s-112-33-126-96c-13-58 17-113 57-138z" fill="#f4d35e" stroke="#233044" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M288 334c48 15 98 16 145 0M278 375c54 17 112 18 163 0" fill="none" stroke="#233044" stroke-width="6"/>
+  <path d="M250 439c68 35 151 35 224 0" fill="none" stroke="#b86f52" stroke-width="17"/>
+  <path d="M256 488c72 34 151 33 222 0" fill="none" stroke="#87b8cc" stroke-width="17"/>
+  <path d="M288 551c42 14 101 15 145 0" fill="none" stroke="#233044" stroke-width="5" stroke-linecap="round"/>
+  <path d="M349 432c17-20 39-20 56-1 17 19 16 46 0 62-17 18-42 18-59-1-17-19-14-43 3-60Z" fill="#efb5c4" stroke="#233044" stroke-width="5"/>
+  <path d="M369 445c7-8 17-8 24 0" fill="none" stroke="#233044" stroke-width="4" stroke-linecap="round"/>
+  <g stroke="#233044" stroke-width="5">
+    <path d="M91 373c31-36 85-26 101 14 15 41-18 84-61 78-43-5-69-56-40-92Z" fill="#f4d35e"/>
+    <path d="M157 372c6-24 21-38 42-43" fill="none" stroke-linecap="round"/>
+    <path d="M180 348c6-20 25-27 43-15-8 21-23 27-43 15Z" fill="#8fb996"/>
+    <path d="M545 488c31-36 85-26 101 14 15 41-18 84-61 78-43-5-69-56-40-92Z" fill="#f4d35e"/>
+    <path d="M611 487c6-24 21-38 42-43" fill="none" stroke-linecap="round"/>
+    <path d="M634 463c6-20 25-27 43-15-8 21-23 27-43 15Z" fill="#8fb996"/>
+  </g>
+  <path d="M40 230c58-35 94-12 112 23-35 21-76 23-112-23Zm546 15c52-35 83-10 95 20-31 20-65 24-95-20Z" fill="url(#dots)" stroke="#233044" stroke-width="5"/>
+</svg>

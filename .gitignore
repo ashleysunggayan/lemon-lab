@@ -1,0 +1,7 @@
+# Codex working and delivery folders
+work/
+outputs/
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db

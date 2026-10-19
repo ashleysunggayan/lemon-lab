@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Lemon Lab lemon mark</title>
+  <path fill="#F4D35E" stroke="#233044" stroke-width="4" d="M51 13C39 1 15 10 9 27 3 44 17 59 34 55c17-4 27-29 17-42Z"/>
+  <path fill="none" stroke="#233044" stroke-linecap="round" stroke-width="4" d="M42 13c2-6 6-8 11-8"/>
+  <path fill="#8FB996" stroke="#233044" stroke-width="3" d="M44 10c3-7 9-8 14-4-3 7-8 9-14 4Z"/>
+  <path fill="none" stroke="#233044" stroke-linecap="round" stroke-width="5" d="M25 23v20h15"/>
+</svg>
