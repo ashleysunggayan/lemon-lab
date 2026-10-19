@@ -14,20 +14,22 @@
 
   <header class="site-header" id="top">
     <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Lemon Lab Pottery Studio home">
-        <span class="brand-mark" aria-hidden="true">L</span>
-        <span>Lemon Lab</span>
+      <a class="brand header-brand" href="#home" aria-label="Lemon Lab Pottery Studio home">
+        <img src="assets/lemon-lab-logo-dark-transparent.png" alt="Lemon Lab">
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span class="sr-only">Toggle navigation</span>
         <span></span><span></span><span></span>
       </button>
       <div class="nav-menu" id="nav-menu">
-        <a href="#heritage">Heritage side quest</a>
-        <a href="#spot-details">Spot the details</a>
-        <a href="#concepts">Clay ideas</a>
-        <a href="#classes">Classes</a>
-        <a href="#sources">Sources</a>
+        <a href="#about">About</a>
+        <a href="#classes">Pottery Classes</a>
+        <a href="#painting-date">Painting Date</a>
+        <a href="#private-events">Events</a>
+        <a href="https://lemonlab.ph/shop/" target="_blank" rel="noopener noreferrer">Shop</a>
+        <a class="cart-link" href="https://lemonlab.ph/cart/" target="_blank" rel="noopener noreferrer" aria-label="Open Lemon Lab shopping cart">
+          <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 6h4l3 14h13l3-10H10M13 26a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm13 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
+        </a>
       </div>
     </nav>
   </header>
@@ -48,12 +50,11 @@
             </div>
           </div>
           <div class="hero-feature-art">
-            <img src="assets/lemon-lab-heritage.svg" alt="Illustrated interpretation of the First United Building, home of Lemon Lab Pottery Studio." width="760" height="680">
-            <div class="hero-note">
+            <img src="assets/first-united-building-illustration-v2.png" alt="Sharp, colorful illustration of the First United Building with the Lemon Lab logo." width="1359" height="1157">
+            <div class="hero-note" tabindex="0">
               <strong>A little history. A lot of creativity.</strong>
               <span>Learn the story of the heritage building that houses Lemon Lab, then imagine turning its lines and shapes into pottery.</span>
             </div>
-            <p class="hero-art-caption">Illustration concept inspired by the building’s Art Deco character — not a historic photograph.</p>
           </div>
         </div>
       </div>
@@ -142,19 +143,56 @@
       </div>
     </section>
 
+    <section class="section history-timeline" id="history-timeline" aria-labelledby="history-title">
+      <div class="shell">
+        <div class="history-intro reveal">
+          <p class="eyebrow">A short history · Escolta, Manila</p>
+          <h2 id="history-title">One building, many chapters.</h2>
+          <p>The First United Building was originally known as the Perez–Samanillo Building. Its story connects pre-war Escolta, architectural ambition, wartime survival, and today’s creative community.</p>
+        </div>
+        <div class="history-grid">
+          <article class="history-card history-yellow reveal">
+            <span class="history-period">1928</span>
+            <h3>A landmark rises</h3>
+            <p>Built for Luis Perez Samanillo and designed by architect Andrés Luna de San Pedro. The Manila city government awarded it the “most beautiful office building” distinction that year, according to the NHCP marker.</p>
+          </article>
+          <article class="history-card history-purple reveal">
+            <span class="history-period">Pre-war Escolta</span>
+            <h3>Commerce and city life</h3>
+            <p>Escolta was a major commercial and financial district. The building hosted businesses and, later, Berg’s Department Store on its ground floor.</p>
+          </article>
+          <article class="history-card history-green reveal">
+            <span class="history-period">World War II</span>
+            <h3>A survivor</h3>
+            <p>The building survived the Battle of Manila, although the wider district suffered severe wartime damage. Its continued presence is part of Escolta’s heritage landscape.</p>
+          </article>
+          <article class="history-card history-pink reveal">
+            <span class="history-period">1968 → Today</span>
+            <h3>From office to creative hub</h3>
+            <p>The NHCP marker records its acquisition by First United Building Corporation in 1968. Today, the building supports a mix of businesses and creative activities.</p>
+          </article>
+        </div>
+        <a class="history-source-link reveal" href="https://philhistoricsites.nhcp.gov.ph/registry_database/perez-samanillo-building/" target="_blank" rel="noopener noreferrer">View the NHCP registry entry <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
     <section class="heritage-quiz" id="spot-details">
       <div class="shell quiz-grid reveal">
         <div class="quiz-intro">
           <p class="eyebrow">A tiny heritage challenge</p>
           <h2>Can you spot the inspiration?</h2>
-          <p>Which architectural feature is the best match for a ceramic tile built around repeated rectangular lines?</p>
-          <p><strong>Choose an answer to reveal the explanation.</strong></p>
-          <button class="quiz-reset" type="button">Try again <span aria-hidden="true">↻</span></button>
+          <p class="quiz-progress" id="quiz-progress">Question 1 of 5</p>
+          <p id="quiz-question">Which architectural feature is the best match for a ceramic tile built around repeated rectangular lines?</p>
+          <p><strong>Choose an answer, then continue through all five questions.</strong></p>
+          <div class="quiz-controls">
+            <button class="quiz-reset" type="button">Start over <span aria-hidden="true">↻</span></button>
+            <button class="quiz-next" type="button" disabled>Next question <span aria-hidden="true">→</span></button>
+          </div>
         </div>
         <div class="quiz-options" role="group" aria-label="Heritage challenge answers">
-          <button type="button" class="quiz-option" data-answer="location"><strong>A.</strong> The building’s location on Escolta Street</button>
-          <button type="button" class="quiz-option" data-answer="windows"><strong>B.</strong> The repeated window grids</button>
-          <button type="button" class="quiz-option" data-answer="year"><strong>C.</strong> The year 1968</button>
+          <button type="button" class="quiz-option" data-choice="0"><strong>A.</strong> <span>The building’s location on Escolta Street</span></button>
+          <button type="button" class="quiz-option" data-choice="1"><strong>B.</strong> <span>The repeated window grids</span></button>
+          <button type="button" class="quiz-option" data-choice="2"><strong>C.</strong> <span>The year 1968</span></button>
           <p class="quiz-feedback" id="quiz-feedback" aria-live="polite">Choose an answer to see how architecture can become a clay pattern.</p>
         </div>
       </div>
@@ -233,7 +271,7 @@
             </div>
           </details>
 
-          <details class="class-card reveal" name="classes">
+          <details class="class-card reveal" id="painting-date" name="classes">
             <summary>
               <span class="class-icon green" aria-hidden="true">✦</span>
               <span><small>Relax, paint, connect</small>Pottery Painting Date (1.5 hrs)</span>
@@ -243,7 +281,7 @@
               <div class="class-detail-layout">
                 <div class="class-pitch">
                   <h3>Chill &amp; paint our pottery pieces!</h3>
-                  <a class="class-book-button" href="https://lemonlab.ph" target="_blank" rel="noopener noreferrer">Book here</a>
+                  <a class="class-book-button" href="https://lemonlab.ph/painting-date/" target="_blank" rel="noopener noreferrer">Book here</a>
                 </div>
                 <div class="class-copy">
                   <p>Don’t want to get your hands muddy and just want to <strong>chill, catch up, and paint a little?</strong> We’ve got you.</p>
@@ -299,7 +337,7 @@
             </div>
           </details>
 
-          <details class="class-card class-card-wide reveal" name="classes">
+          <details class="class-card class-card-wide reveal" id="private-events" name="classes">
             <summary>
               <span class="class-icon navy" aria-hidden="true">★</span>
               <span><small>Your occasion, made by hand</small>Private Bookings / Events</span>
@@ -326,87 +364,36 @@
     <section class="section concepts" id="concepts">
       <div class="shell">
         <div class="section-heading reveal">
-          <p class="eyebrow">Heritage-inspired pottery</p>
+          <p class="eyebrow">Available at the pottery studio</p>
           <h2>Building details, reimagined in clay.</h2>
-          <p class="concept-note"><strong>Proposed concept products</strong> — these ideas are for interpretation and development; they are not presented as currently available Lemon Lab products.</p>
+          <p>Discover handmade ceramic products that carry the geometry, details, and craft traditions of Escolta into everyday objects.</p>
         </div>
         <div class="concept-grid">
           <article class="concept-card tile-card reveal">
-            <div class="concept-art tile-art" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-            <p class="concept-tag">Concept 01</p>
+            <div class="concept-art concept-illustration tile-art"><img src="assets/illustrations/architectural-tiles.png" alt="Cartoon ceramic tiles featuring colorful Art Deco window patterns." width="1280" height="1280"></div>
             <h3>Architectural tiles</h3>
             <p>Decorative ceramic tiles inspired by architectural geometry.</p>
           </article>
           <article class="concept-card mug-card reveal">
-            <div class="concept-art mug-art" aria-hidden="true"><span></span></div>
-            <p class="concept-tag">Concept 02</p>
+            <div class="concept-art concept-illustration mug-art"><img src="assets/illustrations/art-deco-mug.png" alt="Cartoon ceramic mug decorated like the First United Building facade." width="1280" height="1280"></div>
             <h3>Detail-led mugs</h3>
             <p>Handmade mugs featuring designs based on selected building details.</p>
           </article>
           <article class="concept-card souvenir-card reveal">
-            <div class="concept-art building-art" aria-hidden="true"><span></span><span></span><span></span></div>
-            <p class="concept-tag">Concept 03</p>
+            <div class="concept-art concept-illustration building-art"><img src="assets/illustrations/escolta-keepsake.png" alt="Cartoon ceramic keepsake shaped like the First United Building." width="1280" height="1280"></div>
             <h3>Escolta keepsakes</h3>
-            <p>Small ceramic souvenirs representing Escolta’s heritage.</p>
+            <p>Small ceramic souvenirs representing Escolta's heritage.</p>
           </article>
           <article class="concept-card dish-card reveal">
-            <div class="concept-art dish-art" aria-hidden="true"><span>✦</span></div>
-            <p class="concept-tag">Concept 04</p>
+            <div class="concept-art concept-illustration dish-art"><img src="assets/illustrations/trinket-dish.png" alt="Cartoon ceramic trinket dish with colorful Art Deco patterns." width="1536" height="1024"></div>
             <h3>Patterned dishes</h3>
             <p>Trinket dishes with decorative patterns inspired by the building.</p>
           </article>
           <article class="concept-card vessel-card reveal">
-            <div class="concept-art vessel-art" aria-hidden="true"><span></span></div>
-            <p class="concept-tag">Concept 05</p>
+            <div class="concept-art concept-illustration vessel-art"><img src="assets/illustrations/handcrafted-vase.png" alt="Cartoon handcrafted vase with a colorful Art Deco motif." width="1280" height="1280"></div>
             <h3>Craft stories</h3>
-            <p>Handmade ceramic pieces interpreting traditional craftsmanship.</p>
+            <p>Handmade ceramic pieces that interpret traditional craftsmanship.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section interpretation" id="interpretation">
-      <div class="shell interpretation-grid">
-        <div class="qr-card reveal">
-          <div class="qr-visual" aria-hidden="true">
-            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
-          </div>
-          <p>SCAN · LOOK · LISTEN · DISCOVER</p>
-        </div>
-        <div class="interpretation-copy reveal">
-          <p class="eyebrow">Digital heritage interpretation</p>
-          <h2>A small code can open a bigger story.</h2>
-          <p>QR codes may be placed on approved displays and promotional materials, giving visitors an optional path into the building’s history at their own pace.</p>
-          <ul class="check-list">
-            <li>Historical photographs</li>
-            <li>Short historical narratives</li>
-            <li>Architectural explanations</li>
-            <li>Connections between building design and pottery activities</li>
-          </ul>
-          <p class="fine-print">Any QR destination and display location should be reviewed, maintained, and approved before public use.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section signage" id="signage">
-      <div class="shell signage-grid">
-        <div class="sign-preview reveal" aria-label="Proposed Lemon Lab Pottery Studio signboard">
-          <div class="sign-screw sign-screw-one" aria-hidden="true"></div>
-          <div class="sign-screw sign-screw-two" aria-hidden="true"></div>
-          <span class="sign-lemon" aria-hidden="true">L</span>
-          <p>Lemon Lab</p>
-          <h2>Pottery Studio</h2>
-          <blockquote>“Shape the Clay.<br>Discover the Story.”</blockquote>
-          <span class="sign-footer">Room 409 · First United Building</span>
-        </div>
-        <div class="signage-copy reveal">
-          <p class="eyebrow">Proposed establishment signage</p>
-          <h2>Point the way—with care for the place.</h2>
-          <p>Directional signage may be installed at approved locations inside the First United Building to help visitors find the studio and recognize the heritage experience.</p>
-          <div class="care-note">
-            <span aria-hidden="true">!</span>
-            <p>Installation should be coordinated with building management and should avoid unnecessary physical alteration to the historic structure.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -447,7 +434,7 @@
 
   <footer class="site-footer">
     <div class="shell footer-inner">
-      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">L</span><span>Lemon Lab</span></a>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><img src="assets/lemon-lab-original-logo.png" alt=""></span><span>Lemon Lab</span></a>
       <p>From Heritage to Handcraft · Escolta, Manila</p>
       <p>Interpretation concept · <span id="year"></span></p>
     </div>
