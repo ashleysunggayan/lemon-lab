@@ -36,6 +36,20 @@ After the content has been approved and the repository has been committed and pu
 
 Because `index.html` is in the repository root and all internal assets use relative paths, the site works for both user/organization Pages and project Pages.
 
+## Collaborator editing
+
+The floating **Edit site** button on the published page opens this repository in GitHub's authenticated web editor. Only GitHub users with write access to the repository can save changes to `main`.
+
+For an approved collaborator:
+
+1. Sign in to GitHub and select **Edit site** on the live page.
+2. Edit `index.html`, `css/styles.css`, `js/main.js`, or files in `assets/`.
+3. Open **Source Control** in the web editor.
+4. Enter a clear commit message, then commit and sync the changes to `main`.
+5. GitHub Pages automatically starts a new deployment. Check the repository's **Actions** or **Settings → Pages** screen for status.
+
+Repository owners can grant or remove collaborator access in **Settings → Collaborators**. Do not add access tokens, passwords, or other secrets to this public repository.
+
 ## Editing notes
 
 - Page content and section order are in `index.html`.
