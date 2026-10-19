@@ -23,12 +23,11 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-menu" id="nav-menu">
-        <a href="#about">About</a>
-        <a href="#heritage">Heritage</a>
+        <a href="#heritage">Heritage side quest</a>
+        <a href="#spot-details">Spot the details</a>
+        <a href="#concepts">Clay ideas</a>
         <a href="#classes">Classes</a>
-        <a href="#concepts">Concepts</a>
-        <a href="#contact">Contact</a>
-        <a class="button button-small" href="https://lemonlab.ph" target="_blank" rel="noopener noreferrer">Visit official site <span aria-hidden="true">↗</span></a>
+        <a href="#sources">Sources</a>
       </div>
     </nav>
   </header>
@@ -36,11 +35,26 @@
   <main id="main-content">
     <section class="hero" id="home">
       <div class="hero-title reveal">
-        <p>From Heritage to Handcraft · Escolta, Manila</p>
-        <h1>Lemon Lab<br>Pottery &amp; Creative<br>Studio</h1>
-        <div class="hero-title-footer">
-          <p>Shape the Clay.<br>Discover the Story.</p>
-          <a href="#heritage">Meet the building <span aria-hidden="true">↓</span></a>
+        <p class="hero-badge">🍋 Escolta, Manila · Heritage side quest</p>
+        <div class="hero-feature">
+          <div class="hero-feature-copy">
+            <h1>Lemon Lab<br>Pottery &amp; Creative<br>Studio</h1>
+            <p class="hero-deck">Make things. Find the story. Explore the historic First United Building, spot its Art Deco details, and discover how heritage can inspire a new clay creation.</p>
+            <p class="hero-campaign">From Heritage to Handcraft</p>
+            <p class="hero-tagline">Shape the Clay. Discover the Story.</p>
+            <div class="hero-actions">
+              <a class="hero-action hero-action-primary" href="#heritage">Start the heritage quest <span aria-hidden="true">↓</span></a>
+              <a class="hero-action" href="https://lemonlab.ph" target="_blank" rel="noopener noreferrer">Visit Lemon Lab <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="hero-feature-art">
+            <img src="assets/lemon-lab-heritage.svg" alt="Illustrated interpretation of the First United Building, home of Lemon Lab Pottery Studio." width="760" height="680">
+            <div class="hero-note">
+              <strong>A little history. A lot of creativity.</strong>
+              <span>Learn the story of the heritage building that houses Lemon Lab, then imagine turning its lines and shapes into pottery.</span>
+            </div>
+            <p class="hero-art-caption">Illustration concept inspired by the building’s Art Deco character — not a historic photograph.</p>
+          </div>
         </div>
       </div>
 
@@ -128,6 +142,24 @@
       </div>
     </section>
 
+    <section class="heritage-quiz" id="spot-details">
+      <div class="shell quiz-grid reveal">
+        <div class="quiz-intro">
+          <p class="eyebrow">A tiny heritage challenge</p>
+          <h2>Can you spot the inspiration?</h2>
+          <p>Which architectural feature is the best match for a ceramic tile built around repeated rectangular lines?</p>
+          <p><strong>Choose an answer to reveal the explanation.</strong></p>
+          <button class="quiz-reset" type="button">Try again <span aria-hidden="true">↻</span></button>
+        </div>
+        <div class="quiz-options" role="group" aria-label="Heritage challenge answers">
+          <button type="button" class="quiz-option" data-answer="location"><strong>A.</strong> The building’s location on Escolta Street</button>
+          <button type="button" class="quiz-option" data-answer="windows"><strong>B.</strong> The repeated window grids</button>
+          <button type="button" class="quiz-option" data-answer="year"><strong>C.</strong> The year 1968</button>
+          <p class="quiz-feedback" id="quiz-feedback" aria-live="polite">Choose an answer to see how architecture can become a clay pattern.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="section classes" id="classes">
       <div class="shell">
         <div class="section-heading centered reveal">
@@ -140,48 +172,85 @@
           <details class="class-card reveal" name="classes">
             <summary>
               <span class="class-icon clay" aria-hidden="true">◒</span>
-              <span><small>1-hour introduction</small>Speed Run – Pottery Wheel</span>
+              <span><small>1-hour introduction</small>Speed Run – Pottery Wheel (1hr)</span>
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>A beginner-friendly first spin on the pottery wheel. Learn with guidance and shape a cup or bowl-sized piece—ideal for a quick creative side quest.</p>
-              <a href="https://lemonlab.ph/product/speedrun/" target="_blank" rel="noopener noreferrer">Check details &amp; book <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>A 1 hour introductory class - perfect for a curious side quest!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/speedrun/" target="_blank" rel="noopener noreferrer">Book here!</a>
+                </div>
+                <div class="class-copy">
+                  <p>Looking for a fun <strong>side quest</strong>, a relaxing solo date, or a unique activity with your special someone? Bring your friends, family, or anyone who’s up for getting a little muddy!</p>
+                  <p>In this <strong>1-hour beginner-friendly pottery class</strong>, you will make 1 piece on the pottery wheel (cup, snack bowl, or matcha bowl) with guidance from our in-house potters. <strong>No experience required!</strong> Just come ready to have fun.</p>
+                  <p>Love what you made? Simply add our <strong>Glazing &amp; Firing service</strong> so you can bring your piece home!</p>
+                </div>
+              </div>
             </div>
           </details>
 
           <details class="class-card reveal" name="classes">
             <summary>
               <span class="class-icon blue" aria-hidden="true">◎</span>
-              <span><small>Deeper wheel session</small>Essentials – Pottery Wheel</span>
+              <span><small>Deeper wheel session</small>Essentials – Pottery Wheel (3 hrs)</span>
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>Spend more time learning the fundamentals of wheel throwing—from preparing and centering clay to shaping functional ceramic forms.</p>
-              <a href="https://lemonlab.ph/product/essentials-pottery-class/" target="_blank" rel="noopener noreferrer">Check details &amp; book <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Intensive guided session, perfect for hobbyists &amp; beginners!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/essentials-pottery-class/" target="_blank" rel="noopener noreferrer">Book here!</a>
+                </div>
+                <div class="class-copy">
+                  <p>If the <strong>Speed Run</strong> leaves you wanting more, the <strong>Essentials Class</strong> is where the real pottery journey begins. This <strong>3-hour beginner-friendly class</strong> gives you plenty of time to learn the fundamentals of wheel throwing and build your confidence on the wheel.</p>
+                  <p>You’ll create <strong>2–3 ceramic pieces during the session</strong> and choose your <strong>favorite 2 pieces</strong> for us to professionally glaze and fire for <strong>FREE.</strong></p>
+                  <p>Want the complete pottery experience? Add our <strong>Paint Your Own Pottery</strong> option and return <strong>3–4 weeks later</strong> to decorate your pieces before their final firing.</p>
+                  <p>If you’re looking to explore a new hobby and maybe even a new skill, <strong>this is the class we recommend.</strong> No experience required!</p>
+                </div>
+              </div>
             </div>
           </details>
 
           <details class="class-card reveal" name="classes">
             <summary>
               <span class="class-icon pink" aria-hidden="true">∪</span>
-              <span><small>No wheel needed</small>Mug Handbuilding</span>
+              <span><small>No wheel needed</small>Mug Handbuilding (3 hrs)</span>
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>Build and personalize a ceramic mug from scratch with guided handbuilding techniques. Add playful shapes, handles, textures, and details of your own.</p>
-              <a href="https://lemonlab.ph/product/mug-handbuilding-workshop/" target="_blank" rel="noopener noreferrer">Check details &amp; book <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Design your own mug - No pottery wheel needed!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/mug-handbuilding-workshop/" target="_blank" rel="noopener noreferrer">Book here</a>
+                </div>
+                <div class="class-copy">
+                  <p>Ever wanted to make a mug with a giant bow handle, a cat on a mug, tiny mushrooms, or just want to design your own mug? This is the class for you!</p>
+                  <p>Our <strong>3-hour Handbuilding Mug Class</strong> is perfect for beginners who want complete creative freedom—<strong>no pottery wheel needed.</strong> Using our easy-to-follow mug templates as your starting point, you’ll learn handbuilding techniques while customizing your mug with fun shapes, and decorations. We’ll help bring your ideas to life!</p>
+                  <p>You can also add an <strong>option to paint your mug on the same day if you want to take your designs to the next level!</strong></p>
+                </div>
+              </div>
             </div>
           </details>
 
           <details class="class-card reveal" name="classes">
             <summary>
               <span class="class-icon green" aria-hidden="true">✦</span>
-              <span><small>Relax, paint, connect</small>Pottery Painting Date</span>
+              <span><small>Relax, paint, connect</small>Pottery Painting Date (1.5 hrs)</span>
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>Choose a ready-to-paint pottery piece and make it your own with color. A laid-back creative date, solo reset, or catch-up with friends.</p>
-              <a href="https://lemonlab.ph" target="_blank" rel="noopener noreferrer">See current sessions <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Chill &amp; paint our pottery pieces!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph" target="_blank" rel="noopener noreferrer">Book here</a>
+                </div>
+                <div class="class-copy">
+                  <p>Don’t want to get your hands muddy and just want to <strong>chill, catch up, and paint a little?</strong> We’ve got you.</p>
+                  <p>Pick your favorite piece from our collection of ready-to-paint pottery, grab a seat, and spend a relaxing few hours adding your own colors and designs. Whether it’s a <strong>cute date idea</strong>, a <strong>solo self-care session</strong>, or a creative hangout with friends and family, this experience is all about slowing down and having fun.</p>
+                  <p>No pressure. No mess. Just good company, good vibes, and a one-of-a-kind keepsake to take home.</p>
+                </div>
+              </div>
             </div>
           </details>
 
@@ -192,8 +261,18 @@
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>Join the community and book studio time to develop your practice with access to wheels, hand tools, and shared creative space.</p>
-              <a href="https://lemonlab.ph/product/studio-membership/" target="_blank" rel="noopener noreferrer">Explore membership <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Practice at your own pace &amp; be part of a supportive community!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/studio-membership/" target="_blank" rel="noopener noreferrer">Sign up here!</a>
+                </div>
+                <div class="class-copy">
+                  <p>Practice pottery at your own pace in a space that feels like home.</p>
+                  <p>Whether you’re looking for a <strong>quiet corner to focus</strong>, a <strong>creative community to grow with</strong>, or simply a place to make pottery whenever inspiration strikes, you’re always welcome here.</p>
+                  <p>Our studio is open to <strong>all skill levels</strong>—from complete beginners finding their footing to experienced potters refining their craft. No pressure, no gatekeeping, and definitely no judgment.</p>
+                  <p>Come make a mess, experiment, learn, and create alongside a community that loves clay just as much as you do.</p>
+                </div>
+              </div>
             </div>
           </details>
 
@@ -204,8 +283,19 @@
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>A tactile group experience designed to encourage collaboration, creative confidence, and a memorable break from the usual team routine.</p>
-              <a href="https://lemonlab.ph/product/private-bookings/" target="_blank" rel="noopener noreferrer">Plan a team session <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Hands-on &amp; offline for a memorable team building activity!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/private-bookings/" target="_blank" rel="noopener noreferrer">Inquire here</a>
+                </div>
+                <div class="class-copy">
+                  <p>Let’s be honest—another trust fall or PowerPoint party isn’t exactly memorable.</p>
+                  <p>Get your team offline (for once!), <strong>work with your hands</strong>, and enjoy a creative experience that’s equal parts relaxing, collaborative, and genuinely fun. Whether you’re throwing on the pottery wheel, handbuilding, or painting pottery, our workshops are designed to get everyone talking, laughing, and creating together.</p>
+                  <p>No artistic talent? No problem. <strong>Our sessions are beginner-friendly</strong>, and our in-house potters will guide your team every step of the way.</p>
+                  <p>Perfect for team celebrations, company outings, onboarding, client appreciation events, or simply giving your team a well-deserved break from screens and meetings.</p>
+                  <p><strong>Less emails. Better team memories.</strong></p>
+                </div>
+              </div>
             </div>
           </details>
 
@@ -216,8 +306,17 @@
               <span class="plus" aria-hidden="true"></span>
             </summary>
             <div class="class-details">
-              <p>Bring your group together for birthdays, celebrations, workshops, or other creative gatherings, with a pottery experience shaped for the occasion.</p>
-              <a href="https://lemonlab.ph/product/private-bookings/" target="_blank" rel="noopener noreferrer">Ask about a private event <span aria-hidden="true">↗</span></a>
+              <div class="class-detail-layout">
+                <div class="class-pitch">
+                  <h3>Bridal shower? Birthdays? Use our space exclusively!</h3>
+                  <a class="class-book-button" href="https://lemonlab.ph/product/private-bookings/" target="_blank" rel="noopener noreferrer">Inquire here</a>
+                </div>
+                <div class="class-copy">
+                  <p>Looking for a venue that’s a little less ordinary?</p>
+                  <p>Host a <strong>pottery-themed birthday, bridal shower, creative gathering</strong>, or <strong>host your own workshop</strong> in our cozy studio nestled inside a <strong>beautiful heritage building.</strong></p>
+                  <p>With wide sun-lit windows, plenty of creative energy, and a warm, welcoming atmosphere, it’s the kind of space you just can’t find anywhere else. We’ll help you create an experience that’s relaxed, memorable, and a little messy—in the best way possible.</p>
+                </div>
+              </div>
             </div>
           </details>
         </div>
