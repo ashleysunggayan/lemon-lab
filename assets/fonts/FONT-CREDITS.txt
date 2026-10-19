@@ -1,0 +1,13 @@
+Bundled fonts
+=============
+
+Formera
+Copyright 2023 The Formera Project Authors
+Source: https://github.com/noirblancrouge/Formera
+
+Chakra Petch
+Copyright 2018 The Chakra Petch Project Authors
+Source: https://github.com/m4rc1e/Chakra-Petch
+
+Both font families are distributed under the SIL Open Font License,
+Version 1.1. See OFL-1.1.txt in this directory.

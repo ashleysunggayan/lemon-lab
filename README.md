@@ -14,8 +14,20 @@ The site connects Lemon Lab's pottery activities with a proposed heritage interp
 ├── js/
 │   └── main.js
 ├── assets/
+│   ├── fonts/
+│   │   ├── formera-400-normal.woff2
+│   │   ├── chakra-petch-400-normal.ttf
+│   │   ├── chakra-petch-600-normal.ttf
+│   │   ├── FONT-CREDITS.txt
+│   │   └── OFL-1.1.txt
+│   ├── photos/
+│   │   ├── studio-about.png
+│   │   ├── studio-classes.png
+│   │   ├── studio-events.png
+│   │   └── studio-membership.png
 │   ├── lemon-lab-heritage.svg
 │   └── lemon-lab-mark.svg
+├── EDITING.md
 ├── .nojekyll
 └── README.md
 ```
@@ -56,6 +68,8 @@ Repository owners can grant or remove collaborator access in **Settings → Coll
 - Colors, layout, components, and responsive styles are in `css/styles.css`.
 - Mobile navigation and scroll-in animations are in `js/main.js`.
 - Original vector artwork is stored in `assets/` and can be edited as SVG.
+- The reference-matched Formera and Chakra Petch fonts are bundled in `assets/fonts/` under the SIL Open Font License 1.1.
+- Official Lemon Lab studio images used by the color-panel layout are stored in `assets/photos/` for reliable GitHub Pages delivery.
 - External class, booking, social, and source links should be rechecked before publication.
 - Historical details, business information, permissions, class availability, pricing, and schedules should be verified with Lemon Lab and First United Building management before launch.
 
