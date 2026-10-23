@@ -880,3 +880,5 @@ h3 { line-height: 1.15; letter-spacing: -.025em; }
 .holder-art { background: #f5df8a; }
 .round-art { background: #eadcf1; }
 .tray-art { background: #f3c9ad; }
+
+@media (min-width: 901px) { .concept-card:nth-last-child(2) { grid-column: 2 / span 2; } }
