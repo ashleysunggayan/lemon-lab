@@ -186,7 +186,7 @@ h3 { line-height: 1.15; letter-spacing: -.025em; }
 .concepts { background: var(--white); }
 .concept-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 18px; margin-top: 45px; }
 .concept-card { grid-column: span 2; padding: 18px 18px 24px; border: var(--border); border-radius: 22px; background: var(--cream); }
-.concept-card:nth-last-child(2) { grid-column: 2 / span 2; }
+
 .concept-card h3 { font-size: 1.25rem; margin: 8px 0; }
 .concept-card > p:last-child { font-size: .9rem; line-height: 1.5; margin: 0; }
 .concept-art { position: relative; height: 190px; overflow: hidden; border: var(--border); border-radius: 15px; background: var(--yellow); }
@@ -873,3 +873,10 @@ h3 { line-height: 1.15; letter-spacing: -.025em; }
   }
   .hero { padding-top: 82px; }
 }
+
+.planter-art { background: #e2e9c9; }
+.scalloped-art { background: #f4d9bc; }
+.geometric-art { background: #cde5df; }
+.holder-art { background: #f5df8a; }
+.round-art { background: #eadcf1; }
+.tray-art { background: #f3c9ad; }
