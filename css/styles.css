@@ -912,3 +912,16 @@ h3 { line-height: 1.15; letter-spacing: -.025em; }
 @media (max-width: 960px) { .history-grid { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .history-card { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .quiz-answer-photo:not([hidden]) { animation: none; } }
+
+/* Frame the intact area of the studio photo without showing its cutout edges. */
+.history-photo-rectangle { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.history-photo .history-photo-rectangle img {
+  position: absolute;
+  top: -30.34188%;
+  left: -22.59615%;
+  width: 145.19231%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: auto;
+  background: transparent;
+}
