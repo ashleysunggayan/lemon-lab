@@ -62,7 +62,7 @@
       question: "Who designed the Perez–Samanillo Building?",
       choices: ["Juan Nakpil", "Leandro Locsin", "Andrés Luna de San Pedro"],
       correct: 2,
-      photo: { src: "assets/history/marker.webp", caption: "The NHCP marker identifies Andrés Luna de San Pedro as the architect.", source: "https://commons.wikimedia.org/wiki/File:Perez-Samanillo_Building_historical_marker.jpg", credit: "Zarate123, perspective corrected by Eugene Alvin Villar · CC BY-SA 4.0" },
+      photo: { src: "assets/history/andres-luna-de-san-pedro.png", caption: "Portrait of Andrés Luna de San Pedro, architect of the Perez–Samanillo Building." },
       success: "Correct — architect Andrés Luna de San Pedro designed the building.",
       hint: "Not quite. The architect named on the NHCP marker is Andrés Luna de San Pedro."
     },
@@ -78,7 +78,7 @@
       question: "What was the First United Building originally called?",
       choices: ["Calvo Building", "Perez–Samanillo Building", "Regina Building"],
       correct: 1,
-      photo: { src: "assets/history/marker.webp", caption: "The marker identifies the landmark as the Perez-Samanillo Building.", source: "https://commons.wikimedia.org/wiki/File:Perez-Samanillo_Building_historical_marker.jpg", credit: "Zarate123, perspective corrected by Eugene Alvin Villar · CC BY-SA 4.0" },
+      photo: { src: "assets/history/perez-samanillo-archival.png", caption: "Archival view of the Perez–Samanillo Building, now the First United Building." },
       success: "Correct — First United Building was originally known as the Perez–Samanillo Building.",
       hint: "Not quite. Its original name was the Perez–Samanillo Building."
     }
@@ -100,19 +100,22 @@
     image.alt = photo.caption;
     image.onload = function () {
       if (request !== photoRequest) return;
-      const credit = document.createElement("a");
-      credit.href = photo.source;
-      credit.textContent = photo.credit;
-      const attribution = document.createElement("span");
-      attribution.append(credit);
-      if (photo.credit.includes("CC BY-SA")) {
-        const license = document.createElement("a");
-        const version = photo.credit.endsWith("3.0") ? "3.0" : "4.0";
-        license.href = "https://creativecommons.org/licenses/by-sa/" + version + "/";
-        license.textContent = "license";
-        attribution.append(" · ", license, " · Resized");
+      answerCaption.textContent = photo.caption;
+      if (photo.source && photo.credit) {
+        const credit = document.createElement("a");
+        credit.href = photo.source;
+        credit.textContent = photo.credit;
+        const attribution = document.createElement("span");
+        attribution.append(credit);
+        if (photo.credit.includes("CC BY-SA")) {
+          const license = document.createElement("a");
+          const version = photo.credit.endsWith("3.0") ? "3.0" : "4.0";
+          license.href = "https://creativecommons.org/licenses/by-sa/" + version + "/";
+          license.textContent = "license";
+          attribution.append(" · ", license, " · Resized");
+        }
+        answerCaption.append(attribution);
       }
-      answerCaption.replaceChildren(document.createTextNode(photo.caption), attribution);
       answerImage.replaceChildren(image);
       answerPhoto.hidden = false;
     };
